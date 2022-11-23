@@ -1,0 +1,501 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'open sans', sans-serif;
+    background-color: #2C3333;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFECEF;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #2C3639;
+    z-index: 1;
+    border-bottom: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #FFECEF;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 12px 0px 12px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFCACA;
+    transition: 0.5s;
+
+}
+
+/* content 1 */
+a.tombol_biru {
+    background: #7A86B6;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tombol_biru:hover {
+    background-color: #51557E;
+    text-decoration: none;
+}
+
+.kata {
+    font-size: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #E7F6F2;
+}
+
+.btn {
+    font-size: large;
+    background: #A5C9CA;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #E7F6F2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: silver;
+    background: #395B64;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* content 2 */
+#profil {
+    display: flex;
+    padding-top: 7em;
+    padding-bottom: 4em;
+}
+
+#profil:before {
+    top: 550px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #2C3333, transparent);
+}
+
+.gambar1 {
+    padding: 5em;
+    width: 40%;
+    border-radius: 90%;
+}
+
+.kolom {
+    padding: 3em;
+    color: #E7F6F2;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom h2 {
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 40px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kolom .deskripsi p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.deskripsi {
+    font-size: 50px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.kolom2 {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    font-size: 25px;
+    color: #E7F6F2;
+    font-weight: 600;
+}
+
+.mhs-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-mhs {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.card-mhs img {
+    width: 80%;
+}
+
+.card-mhs a {
+    font-size: 24px;
+    text-align: center;
+    color: #E7F6F2;
+}
+
+.card-mhs a:hover {
+    text-decoration: underline;
+}
+
+.card-mhs p {
+    font-size: 20px;
+    color: #E7F6F2;
+}
+
+/* content 2 */
+.pendidikan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pendidikan {
+    padding: 5em;
+    background-image: url('stars.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-bottom: 40vh;
+
+}
+
+#pendidikan::before {
+    top: 130em;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #2C3333, transparent);
+}
+
+#pendidikan::after {
+    top: 94em;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, #2C3333, transparent);
+}
+
+/* content 3 */
+#pengalaman {
+    display: flex;
+    padding-top: 7em;
+    padding-bottom: 4em;
+}
+
+#pengalaman:before {
+    top: 130em;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #2C3333, transparent);
+}
+
+.gambar2 {
+
+    padding: 6em;
+    width: 40%;
+    /* border-radius: 90%; */
+}
+
+.kolom1 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    padding: 4em;
+    color: #E7F6F2;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom1 h2 {
+    min-width: 150px;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 40px;
+}
+
+.kolom1 .deskripsi1 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.deskripsi1 {
+    font-size: 50px;
+}
+
+/* content 4 */
+#skill {
+    padding: 10em;
+    background-image: url('stars.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    padding-bottom: 77vh;
+}
+
+#skill:after {
+    top: 400vh;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #2C3333, transparent);
+}
+
+.wrapper1 {
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 215em;
+}
+
+.container1 {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.container1 * {
+    font-family: 'Courier New', Courier, monospace;
+    color: #E7F6F2;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28, 151, 252, 0.6);
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 10%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 5%;
+    }
+}
+
+#js-bar {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 0%;
+    }
+}
+
+#alice-bar {
+    animation: alice-fill 2s forwards;
+}
+
+@keyframes alice-fill {
+    100% {
+        width: 30%;
+    }
+}
+
+#green-bar {
+    animation: green-fill 2s forwards;
+}
+
+@keyframes green-fill {
+    100% {
+        width: 0%;
+    }
+}
+
+/* content 6 */
+
+#kontak::after {
+    top: 224em;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #2C3639, transparent);
+}
+
+.inner-footer {
+    margin: 0;
+    background-color: #2C3639;
+    width: 100%;
+}
+
+h3 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFECEF;
+}
+
+.social-items {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.social-items a {
+    background: #3F3351;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.social-links ul {
+    height: 0.5cm;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a:hover {
+    background-color: #1F1D36;
+    color: #FFCACA;
+    transition: 0.5s;
+}
